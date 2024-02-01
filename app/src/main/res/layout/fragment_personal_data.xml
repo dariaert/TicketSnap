@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PersonalData"
+    android:background="@color/beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/showEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <TextView
+                    android:id="@+id/viewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="20dp"
+                    android:text="darymo@yandex.ru"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/emailImg"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/email_img" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/arrowEmailImg"
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/arrow_next" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/showName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <TextView
+                    android:id="@+id/viewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="20dp"
+                    android:text="Дарья"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nameImg"
+                    android:layout_width="13dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_user" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/arrowNameImg"
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/arrow_next" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/showSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutSurname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <TextView
+                    android:id="@+id/viewSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="20dp"
+                    android:text="Можаева"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/surnameImg"
+                    android:layout_width="13dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_user" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/arrowSurnameImg"
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/arrow_next" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signIn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/custom_btn_stroke"
+            android:text="Выход"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/btnDeleteProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить профиль"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/montserrat_alternates_medium"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

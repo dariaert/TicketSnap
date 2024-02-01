@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:paddingRight="25dp"
+    android:paddingLeft="25dp"
+    android:scrollbars="none"
+    tools:context=".activities.AccountActivity"
+    android:background="@color/beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageBack"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/helloText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:text="Здравствуйте, Дарья!"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/btmReplaceFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/personalData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_medium"
+                    android:text="Личные данные"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="1dp"
+                    android:background="@color/light_blue"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/changePass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:text="Смена пароля"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/Fragments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:paddingRight="25dp"
+    android:paddingLeft="25dp"
+    android:scrollbars="none"
+    tools:context=".activities.SignUpActivity"
+    android:background="@color/beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageBack"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SignUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="20dp"
+                    android:hint="E-mail"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/emailImg"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/email_img" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SignUpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <EditText
+                    android:id="@+id/inputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:inputType="text"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="20dp"
+                    android:hint="Имя"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nameImg"
+                    android:layout_width="13dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_user" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SignUpSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutSurname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <EditText
+                    android:id="@+id/inputSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:inputType="text"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="20dp"
+                    android:hint="Фамилия"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/surnameImg"
+                    android:layout_width="13dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_user" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LogInPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogInEmail">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <EditText
+                    android:id="@+id/inputPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="33dp"
+                    android:text="Пароль"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/dark_blue"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/passImg"
+                    android:layout_width="15dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/password_star" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/arrowPassImg"
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/arrow_next" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LogInConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogInEmail">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutConfirmPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/custom_input_shadow" />
+
+                <EditText
+                    android:id="@+id/inputConfirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_input"
+                    android:fontFamily="@font/montserrat_alternates_regular"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="47dp"
+                    android:paddingEnd="33dp"
+                    android:text="Повторите пароль"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/dark_blue"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/confirmPassImg"
+                    android:layout_width="15dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/password_star" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/arrowConfirmPassImg"
+                    android:layout_width="7dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/arrow_next" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/custom_btn_stroke"
+            android:text="Зарегистрироваться"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/montserrat_alternates_regular"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LogInConfirmPass"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</ScrollView>
